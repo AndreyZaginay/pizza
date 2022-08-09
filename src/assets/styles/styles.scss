@@ -1,5 +1,24 @@
-$background-color: lightcoral;
+@import 'header.scss';
+@import 'main.scss';
+@import 'footer.scss';
+%a-text-decoration {
+    text-decoration: none;
+    color: inherit;
+}
 
-body {
-  background-color: $background-color;
+
+
+* {
+    margin: 0;
+    padding: 0 ;
+  
+}
+html,body { 
+    height: auto;
+    overflow-x: hidden;
+    
+}
+
+a {
+    @extend %a-text-decoration;
 }

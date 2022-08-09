@@ -1,0 +1,74 @@
+.blog {
+    background-image: url('../images/bg_4.jpg');
+    background-size: 100%;
+    background-position: 10px;
+    width: 100%;
+    height: 600px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .blog-content {
+        width: 70%;
+        height: 85%;
+        display: grid;
+        grid-template-rows: 35% 65%;
+        
+        .blog-header {
+            text-align: center;
+            width: 50%;
+            height: 100%;
+            justify-self: center;
+            .blog-header-content {
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                h1 {
+                    color: white;
+                    padding-top: 10px;
+                }
+                p {
+                    color: gray;
+                    padding-top: 20px;
+                }
+            }
+        }
+        .blog-main {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-column-gap: 15px;
+            .blog-item {
+                display: grid;
+                grid-template-rows: 70% 30%;
+                .div-img{
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .blog-1  {
+                    background-image: url('../images/image_1.jpg');
+                }
+                .blog-2{
+                    background-image: url('../images/image_2.jpg');
+                }
+                .blog-3{
+                    background-image: url('../images/pizza-1.jpg');
+                }
+                .blog-item-text{
+                    span {
+                        color: gray;
+
+                    }
+                    h2{
+                        color: white;
+                        font-size: 15px;
+                        padding-top: 10px;
+                    }
+                    p {
+                        padding-top: 10px;
+                        color: gray;
+                    }
+                }
+            }
+        }
+    }
+}

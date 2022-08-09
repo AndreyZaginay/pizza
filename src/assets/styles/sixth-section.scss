@@ -1,0 +1,95 @@
+.popular-orders {
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/bg_4.jpg');
+    background-size: 100%;
+    .popular-orders-content {
+        display: grid;
+        grid-template-columns: 33% 67%;
+        width: 100%;
+        height: 85%;
+        .div-img {
+            background-image: url('../images/about.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .content {
+            display: grid;
+            grid-template-rows: 10% 90%;
+            padding: 40px;
+            grid-row-gap: 20px;
+            .popular-orders-nav {
+                display: flex;
+                gap: 7px;
+                a {  
+                    border:1px solid rgb(251, 207, 103);
+                    padding: 10px 15px;
+                    color: rgb(251, 207, 103);
+                }
+            }
+            
+            .popular-menu {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-column-gap: 20px;
+                .popular-menu-list {
+                    display: grid;
+                    grid-template-rows: 50% 50%;
+                    grid-gap: 10px;
+                    .top-menu-div {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .img-container {
+                            width: 175px;
+                            height: 175px;
+                            border-radius: 100%;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;    
+                        }                        
+                    }
+                    .text-content {
+                        display: grid;
+                        grid-template-rows: 20% 50% 30%;
+                        .name-of-product {
+                            color: white;
+                            text-align: center;
+                        }
+                        .description-of-product {
+                            text-align: center;
+                            color: gray;
+                        }
+                        .text-content-botton {
+                            display: grid;
+                            grid-template-rows: 1fr 1fr;
+                            justify-items: center;
+                            .price-of-product {
+                                color: rgb(251, 207, 103);
+                            }
+                            button {
+                                padding: 3px 10px;
+                                background-color: Transparent;
+                                background-repeat:no-repeat;
+                                color: white;
+                                border:1px solid white;
+                                &:active{
+                                    box-shadow: 0 5px #666;
+                                    transform: translateY(4px);
+                                      
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+
+@each $item in 1 2 3 {
+    .pizza#{$item} {
+        background-image: url('../images/pizza-#{$item}.jpg');
+    }
+}

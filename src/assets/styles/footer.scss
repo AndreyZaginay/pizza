@@ -1,0 +1,142 @@
+footer {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(15, 14, 26);
+    display: grid;
+    grid-template-rows: 70% 30%;
+    justify-items: center;
+    align-items: center;
+    
+    .footer-top{
+        height: 100%;
+        width: 70%;
+        display: grid;
+        grid-template-columns: 25% 30% 15% 25%;
+        .footer-item{
+            padding: 0 10px;
+            h2 {
+                color: white;
+                font-size: 15px;
+                margin-top: 50px;
+                padding-bottom: 30px;
+            }
+            a,p {
+                color: gray;
+            }
+           
+        }
+        .about-us-footer{
+            .text-container {
+                text-align: left;
+                padding-bottom: 50px;
+            }
+            .png-container {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .png-footer{
+                    width: 40px;
+                    height: 40px;
+                    background-color: rgb(35, 34, 34);
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        .recent-blog-content{
+                 width: 100%;
+                height: 70px;
+                display: grid;
+                grid-template-columns: 30% 70%;
+                
+                .text-content-footer{
+                    display: grid;
+                    grid-template-rows: 60% 40%;
+                    p{
+                        padding-left: 10px;
+                        font-size: 13px;
+                        color: white;
+                }
+                span{
+                    color: gray;
+                    font-size: 10px;
+                    padding-left: 10px;
+                }
+            }
+        }
+        .recent-blog-content:nth-child(3) {
+            padding-top: 10px;
+        }
+        .services-footer{
+            display: flex;
+            flex-direction: column;
+            .cooked{
+                padding: 0;
+            }
+            a {
+                padding-top: 20px;
+            }
+            
+        }
+        .questions{
+            .img-div{
+                background-repeat: no-repeat;
+                background-size: 50%;
+            }
+            .address {
+                width: 100%;
+                height: 70px;
+                display: grid;
+                grid-template-columns: 15% 85%;
+                .adress-text{
+                    padding-left: 10px;
+                    color: gray;
+                }
+              
+                .img-adress{
+                    background-image: url('../images/loc.png');
+                }
+             
+            }
+            .number{
+                width: 100%;
+                height: 20px;
+                display: grid;
+                grid-template-columns: 15% 85%;
+                padding-top: 10px;
+                .number-text{
+                    padding-left: 10px;
+                    color: white;
+                }
+                .img-number{
+                    background-image: url('../images/telephone-handle-silhouette.png');
+                }
+            }
+            .mail{
+                width: 100%;
+                height: 20px;
+                display: grid;
+                grid-template-columns: 15% 85%;
+                padding-top: 10px;
+                .mail-text{
+                    padding-left: 10px;
+                    color: white;
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        p {
+            color: gray;
+        }
+    }
+}

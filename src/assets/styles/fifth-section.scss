@@ -1,0 +1,80 @@
+.restaurant-achievements {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/bg_2.jpg');
+    background-position: 0 25px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+     .restaurant-achievements-top{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+     }
+     .restaurant-achievements-botton {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(0, 0, 0,0.7);
+        .achievements-container {
+            width: 60%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            .achievement-div {
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+
+                .img-div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    .pizza{
+                        background-image: url('../images/pizza32px.png');
+                    }
+                    .awards{
+                       background-image: url('../images/medal.png');
+                    }
+                    .customer{
+                        background-image: url('../images/customer32px.png');
+                    }
+                    .staff{
+                        background-image: url('../images/hat.png');
+                    }
+                    .img-container {
+                        background-repeat: no-repeat;
+                        background-size: 50%;
+                        background-position: center;
+                        width: 75px;
+                        height: 75px;
+                        border: 1px solid rgb(251, 207, 103);
+                    
+                    }
+                } 
+
+                .div-text {
+                    text-align: center;
+                    h1 {
+                        padding:20px 0;
+                        color:rgb(251, 207, 103);
+                    }
+                    span {
+                        color: wheat;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+     }
+}
+
+@each $item in 1 2 3 4 {
+    .img#{$item} {
+        background-image: url('../images/gallery-#{$item}.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+
